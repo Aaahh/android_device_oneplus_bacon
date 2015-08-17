@@ -35,6 +35,7 @@ on init
     export SECONDARY_STORAGE /storage/usbdisk
 
     # Support legacy paths
+    symlink /system/vendor/lib/egl /egl
     symlink /storage/emulated/legacy /sdcard
     symlink /storage/emulated/legacy /mnt/sdcard
     symlink /storage/emulated/legacy /storage/sdcard0

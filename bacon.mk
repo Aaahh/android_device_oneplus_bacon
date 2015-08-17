@@ -81,5 +81,15 @@ ifneq ($(QCPATH),)
 $(call inherit-product-if-exists, $(QCPATH)/prebuilt_HY11/target/product/msm8974/prebuilt.mk)
 endif
 
+# Mango
+PRODUCT_PACKAGES +=  libstlport
+
 # Inherit from msm8974-common
 $(call inherit-product, device/oppo/msm8974-common/msm8974.mk)
+
+# MANGO!
+PRODUCT_PACKAGES += \
+    okhttp \
+    okhttp-nojarjar \
+    okhttp-tests-nojarjar \
+    okhttp-hostdex
